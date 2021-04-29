@@ -1,0 +1,78 @@
+{
+  "private": true,
+  "name": "ohiohpreact",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "preact build",
+    "serve": "sirv build --port 8080 --cors --single",
+    "dev": "preact watch",
+    "lint": "eslint src",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": "preact",
+    "ignorePatterns": [
+      "build/"
+    ]
+  },
+  "devDependencies": {
+    "enzyme": "^3.10.0",
+    "@artsy/fresnel": "^1.2.0",
+    "enzyme-adapter-preact-pure": "^2.0.0",
+    "eslint": "^6.0.1",
+    "eslint-config-preact": "^1.1.3",
+    "jest": "^24.9.0",
+    "jest-preset-preact": "^1.0.0",
+    "preact-cli": "^3.0.5",
+    "sirv-cli": "1.0.3"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.13",
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@react-google-maps/api": "^2.0.2",
+    "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
+    "google-maps-react": "^2.0.6",
+    "preact": "^10.5.7",
+    "preact-fluid": "^0.9.1",
+    "preact-render-to-string": "^5.1.12",
+    "preact-router": "^3.2.1",
+    "prop-types": "^15.7.2",
+    "react-bootstrap": "^1.4.0",
+    "react-datepicker": "^3.8.0",
+    "react-geocode": "^0.2.2",
+    "react-qr-reader": "^2.2.1",
+    "react-rating": "^2.0.5",
+    "react-router-dom": "^5.2.0",
+    "react-select": "^3.1.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.1",
+    "socket.io-client": "^3.0.4",
+    "state-pool": "^0.3.0",
+    "tiled-hexagons": "^1.0.2"
+  },
+  "jest": {
+    "preset": "jest-preset-preact",
+    "setupFiles": [
+      "<rootDir>/tests/__mocks__/browserMocks.js",
+      "<rootDir>/tests/__mocks__/setupTests.js"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
